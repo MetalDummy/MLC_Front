@@ -1,0 +1,58 @@
+@import "../styles/commons.sass"
+
+$font-size-item-page-price: 46px
+$font-size-item-page-condition: 14px
+$font-size-item-page-name: 24px
+$font-size-item-page-desc-header: 28px
+$font-size-item-page-desc-body: 16px
+
+.item-description 
+    background-color: $color-bg-white
+    border-radius: 4px
+    padding-top: $padding-32
+    padding-left: $padding-32
+    padding-right: $padding-32
+    .image-container
+        overflow: hidden
+        justify-content: center
+        @include xl
+            overflow: hidden
+            width: 680px
+            height: 680px
+            justify-content: center
+    .image-wrapper
+        width: 100%
+        border-radius: 4px
+        height: 100%
+    .item-condition
+        color: $color-font-gray
+        font-size: $font-size-item-page-condition
+        margin-bottom: $padding-16
+    .item-name
+        color: $color-font-black
+        font-size: $font-size-item-page-name
+        margin-bottom: $padding-32
+    .item-price
+        color: $color-font-black
+        font-size: $font-size-item-page-price
+        margin-bottom: $padding-32
+    .item-desc-header
+        color: color-font-black
+        font-size: $font-size-item-page-desc-header
+        margin-bottom: $padding-32
+    .item-desc-body
+        color: $color-font-gray
+        font-size: $font-size-item-page-desc-body
+        margin-bottom: $padding-32
+        white-space: pre-line 
+    .descripcion-producto
+        margin-top: $padding-32
+
+hr
+    margin-top: 0rem
+    margin-bottom: 0rem
+    border: 0
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+
+li 
+    list-style-type: none
